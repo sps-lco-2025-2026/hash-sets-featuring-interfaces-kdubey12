@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "ae8wxidNVto=",
+  "success": true,
+  "projectFilePath": "/home/kshitij/Documents/code/GithubClassroomWork/hash-sets-featuring-interfaces-kdubey12/HSetWork/HSetWork.csproj",
+  "expectedPackageFiles": [
+    "/home/kshitij/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.4/microsoft.aspnetcore.app.ref.10.0.4.nupkg.sha512"
+  ],
+  "logs": []
+}
