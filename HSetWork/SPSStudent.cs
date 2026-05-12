@@ -20,4 +20,10 @@ public class SPSStudent
     public override string ToString() => $"{_name} | Y{_year} | {_tutor}";
 
     public override int GetHashCode() => ToString().GetHashCode();
+    public override bool Equals(object? obj)
+    {
+        if (obj is not SPSStudent) return false;
+        SPSStudent other = (SPSStudent)obj;
+        return _name == other._name && _year == other._year && _tutor == other._tutor;
+    }
 }

@@ -1,3 +1,5 @@
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace HSetWork
 {
     [TestClass]
@@ -10,10 +12,10 @@ namespace HSetWork
 
             set.Add(new SPSStudent("Alice", SchoolYear.Year12, "RGS"));
             set.Add(new SPSStudent("Bob",   SchoolYear.Year11, "MHT"));
-            set.Add(new SPSStudent("Alice", SchoolYear.Year12, "RGS")); // duplicate — ignored
-            set.Add(new SPSStudent("Clara", SchoolYear.Year10, "JBW")); // may trigger rehash
+            set.Add(new SPSStudent("Alice", SchoolYear.Year12, "RGS"));
+            set.Add(new SPSStudent("Clara", SchoolYear.Year10, "JBW"));
 
-            Assert.IsPresent()
+            Assert.IsTrue(set.IsPresent(new SPSStudent("Alice", SchoolYear.Year12, "RGS")));
         }
     }
 }
